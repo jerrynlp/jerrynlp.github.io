@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://jerrynlp-github-io
+url: http://jerrynlp.github.io
 title: NLPShare
 subtitle: A personal blog of a (NLP&ML)er.
 author: Weiwei Zhang
@@ -91,7 +91,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: jerrynlp.github.io
+disqus_short_name: jerrynlp-github-io
 disqus_show_comment_count: true
 
 # Google Analytics
