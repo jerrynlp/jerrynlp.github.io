@@ -1,11 +1,13 @@
 ---
+author: Weiwei Zhang
 layout: post
-title: "Octopress + GitHub"
+title: "Using Octopress and GitHub to Build Your Blog"
 date: 2017-02-15 10:54:47 -0500
 comments: true
-categories: Octopress, Blog
+sharing: true
+footer: true
+categories: Octopress, Blog, GitHub
 ---
-# Using Octopress and GitHub to Build Your Blog
 ## Installing Octopress
 ## Creating Repo on GitHub
 ## Setting Up Octopress
