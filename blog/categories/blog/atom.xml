@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Blog | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Blog, | NLPShare]]></title>
   <link href="http://jerrynlp.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://jerrynlp.github.io/"/>
-  <updated>2017-02-15T11:16:39-05:00</updated>
+  <updated>2017-02-15T11:44:57-05:00</updated>
   <id>http://jerrynlp.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Weiwei Zhang]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[Octopress + GitHub]]></title>
+    <title type="html"><![CDATA[Using Octopress and GitHub to Build Your Blog]]></title>
     <link href="http://jerrynlp.github.io/blog/2017/02/15/octopress-plus-github/"/>
     <updated>2017-02-15T10:54:47-05:00</updated>
     <id>http://jerrynlp.github.io/blog/2017/02/15/octopress-plus-github</id>
-    <content type="html"><![CDATA[<h1>Using Octopress and GitHub to Build Your Blog</h1>
-
-<h2>Installing Octopress</h2>
+    <content type="html"><![CDATA[<h2>Installing Octopress</h2>
 
 <h2>Creating Repo on GitHub</h2>
 
