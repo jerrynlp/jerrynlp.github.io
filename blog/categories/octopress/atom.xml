@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress, | NLPShare]]></title>
   <link href="http://jerrynlp.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://jerrynlp.github.io/"/>
-  <updated>2017-02-21T11:52:43-05:00</updated>
+  <updated>2017-02-21T11:55:49-05:00</updated>
   <id>http://jerrynlp.github.io/</id>
   <author>
     <name><![CDATA[Weiwei Zhang]]></name>
@@ -43,11 +43,12 @@ $ rake install
 
 <h2>Creating Repo on Github</h2>
 
-<blockquote><p>create a new repository named username.github.io, where username is your username (or organization name) on GitHub.</p></blockquote>
+<p><code>create a new repository named username.github.io, where username is your username (or organization name) on GitHub.</code></p>
 
 <h2>Setting Up Octopress</h2>
 
-<p><code>$ rake setup_github_pages</code></p>
+<pre><code class="sh">$ rake setup_github_pages
+</code></pre>
 
 <p>Input the URL of your Github repo.</p>
 
@@ -83,16 +84,17 @@ $ rake generate
 <li>the Required Ruby version
 On the office site of Octopress, they are suggesting 1.9.3 or greater versions. This is not correct, and when you are installing your Octopress you will receive an error telling you to install Ruby 2.0.0 or greater.</li>
 <li>Meet problem from Git when &ldquo;rake deploy&rdquo;
-Here is the message from Git,
-
-<blockquote><p>! [rejected]        master -> master (non-fast-forward)
-error: failed to push some refs to &lsquo;***************************************&rsquo;
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Merge the remote changes (e.g. &lsquo;git pull&rsquo;)
-hint: before pushing again.
-hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;help&rsquo; for details.</p></blockquote></li>
+Here is the message from Git,</li>
 </ul>
 
+
+<pre><code>&gt; ! [rejected]        master -&gt; master (non-fast-forward)
+&gt; error: failed to push some refs to '***************************************'
+&gt; hint: Updates were rejected because the tip of your current branch is behind
+&gt; hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+&gt; hint: before pushing again.
+&gt; hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+</code></pre>
 
 <p>This is because some files in your local folder of &ldquo;<em>deploy&rdquo; is newer than the online version. You can easily </em>pull_ the online version to replace your local version if you are sure about there are nothing new locally.</p>
 
