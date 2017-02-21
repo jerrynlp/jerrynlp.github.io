@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress, | NLPShare]]></title>
   <link href="http://jerrynlp.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://jerrynlp.github.io/"/>
-  <updated>2017-02-20T22:14:38-05:00</updated>
+  <updated>2017-02-20T22:19:35-05:00</updated>
   <id>http://jerrynlp.github.io/</id>
   <author>
     <name><![CDATA[Weiwei Zhang]]></name>
@@ -20,57 +20,64 @@
     <id>http://jerrynlp.github.io/blog/2017/02/15/octopress-plus-github</id>
     <content type="html"><![CDATA[<p>I have been writing my blogs since today. Here, I am recording and sharing my look at new  techniques of Natural Language Processing and Machine Learning, or translating some books and papers writen in English to Chinese. I am using Octopress to support my blogs. It took me a while to install Octopress and published in Github, so I would like to write down my experience and hope that it could be helpful to someone who are facing the same problems.</p>
 
-<p>[Octopress]{<a href="http://octopress.org/">http://octopress.org/</a>} is a popular blogging framwork. Unlike [WordPress]{<a href="https://wordpress.org/">https://wordpress.org/</a>} which is supporting dynamic page content, Octopress is a static site and following more hacker way. Under Octopress framwork, you are writing blogs as the pregrammers by using the [Markdown]{<a href="http://www.markdowntutorial.com/">http://www.markdowntutorial.com/</a>} language and publishing them under the control of [Github]{<a href="https://github.com/">https://github.com/</a>}.</p>
+<p><a href="http://octopress.org/">Octopress</a> is a popular blogging framwork. Unlike <a href="https://wordpress.org/">WordPress</a> which is supporting dynamic page content, Octopress is a static site and following more hacker way. Under Octopress framwork, you are writing blogs as the pregrammers by using the <a href="http://www.markdowntutorial.com/">Markdown</a> language and publishing them under the control of <a href="https://github.com/">Github</a>.</p>
 
-<p>If you are using WordPress right now and would like to migrate to Octopress, please refer [Migrating from WordPress to Octopress]{<a href="https://jason.pureconcepts.net/2013/01/migrating-wordpress-octopress/">https://jason.pureconcepts.net/2013/01/migrating-wordpress-octopress/</a>}.</p>
+<p>If you are using WordPress right now and would like to migrate to Octopress, please refer <a href="https://jason.pureconcepts.net/2013/01/migrating-wordpress-octopress/">Migrating from WordPress to Octopress</a>.</p>
 
 <h2>Installing Octopress</h2>
 
-<p>System enviroment: Ubuntu 16.04
-Requirements: Git, Ruby 2.0.0 or greater</p>
+<p>System enviroment: Ubuntu 16.04</p>
 
-<blockquote><h1>Clone repo</h1>
+<p>Requirements: Git, Ruby 2.0.0 or greater</p>
+
+<blockquote><h4>Clone repo</h4>
 
 <p>git clone git://github.com/imathis/octopress.git octopress
 cd octopress</p>
 
-<h1>Install dependencies</h1>
+<h4>Install dependencies</h4>
 
 <p>gem install bundler
 rbenv rehash
 bundle install</p>
 
-<h1>Install the default Octopress theme</h1>
+<h4>Install the default Octopress theme</h4>
 
-<p>rake install</p>
+<p>rake install</p></blockquote>
 
 <h2>Creating Repo on Github</h2>
 
-<p>create a new repository named username.github.io, where username is your username (or organization name) on GitHub.</p>
+<blockquote><p>create a new repository named username.github.io, where username is your username (or organization name) on GitHub.</p></blockquote>
 
 <h2>Setting Up Octopress</h2>
 
-<p>rake setup_github_pages
-Input the URL of your Github repo.</p>
+<blockquote><p>rake setup_github_pages</p></blockquote>
 
-<h1>Deploy your website</h1>
+<p>Input the URL of your Github repo.</p>
+
+<blockquote><h1>Deploy your website</h1>
 
 <p>rake generate
-rake deploy
-After this step, you will have your website code in &ldquo;_deploy&rdquo;.
-git add .
+rake deploy</p></blockquote>
+
+<p>After this step, you will have your website code in &ldquo;_deploy&rdquo;.</p>
+
+<blockquote><p>git add .
 git commit -m &lsquo;your message&rsquo;
-git push origin source
-After this step, you will have your website source code which is used to generate your wbesite code in the branch of &ldquo;source&rdquo;.</p>
+git push origin source</p></blockquote>
+
+<p>After this step, you will have your website source code which is used to generate your wbesite code in the branch of &ldquo;source&rdquo;.</p>
 
 <h2>Installing a new theme</h2>
 
-<p>[3rd Party Octopress Themes]{<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</a>} is providing many Octopress Themes with some different characteristics.
-cd octopress
+<p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">3rd Party Octopress Themes</a> is providing many Octopress Themes with some different characteristics.</p>
+
+<blockquote><p>cd octopress
 git submodule add GIT_URL .themes/THEME_NAME
 rake install[&lsquo;THEME_NAME&rsquo;]
-rake generate
-Remember to &ldquo;push&rdquo; your source code to branch of source after installing a new theme.</p>
+rake generate</p></blockquote>
+
+<p>Remember to &ldquo;push&rdquo; your source code to branch of source after installing a new theme.</p>
 
 <h2>Question &amp; Answer</h2>
 
@@ -79,25 +86,32 @@ Remember to &ldquo;push&rdquo; your source code to branch of source after instal
 On the office site of Octopress, they are suggesting 1.9.3 or greater versions. This is not correct, and when you are installing your Octopress you will receive an error telling you to install Ruby 2.0.0 or greater.</li>
 <li>Meet problem from Git when &ldquo;rake deploy&rdquo;
 Here is the message from Git,
-! [rejected]        master -> master (non-fast-forward)
+
+<blockquote><p>! [rejected]        master -> master (non-fast-forward)
 error: failed to push some refs to &lsquo;***************************************&rsquo;
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Merge the remote changes (e.g. &lsquo;git pull&rsquo;)
 hint: before pushing again.
-hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;help&rsquo; for details.
-This is because some files in your local folder of &ldquo;<em>deploy&rdquo; is newer than the online version. You can easily </em>pull<em> the online version to replace your local version if you are sure about there are nothing new locally.
-cd octopress/</em>deploy
+hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;help&rsquo; for details.</p></blockquote></li>
+</ul>
+
+
+<p>This is because some files in your local folder of &ldquo;<em>deploy&rdquo; is newer than the online version. You can easily </em>pull_ the online version to replace your local version if you are sure about there are nothing new locally.</p>
+
+<blockquote><p>cd octopress/_deploy
 git pull origin master
 cd ..
-rake deploy
+rake deploy</p></blockquote>
 
-<h2>Reference</h2></li>
-<li>[Octopress Setup]{<a href="http://octopress.org/docs/setup/">http://octopress.org/docs/setup/</a>}</li>
-<li>[Github Pages]{<a href="https://pages.github.com/">https://pages.github.com/</a>}</li>
-<li>[Octopress安装和配置]{<a href="http://www.jianshu.com/p/1a117ef0e534">http://www.jianshu.com/p/1a117ef0e534</a>}</li>
-<li>[3rd Party Octopress Themes]{<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</a>}</li>
-</ul>
-</blockquote>
+<h2>Reference</h2>
+
+<ol>
+<li><a href="http://octopress.org/docs/setup/">Octopress Setup</a></li>
+<li><a href="https://pages.github.com/">Github Pages</a></li>
+<li><a href="http://www.jianshu.com/p/1a117ef0e534">Octopress安装和配置</a></li>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">3rd Party Octopress Themes</a></li>
+</ol>
+
 ]]></content>
   </entry>
   
