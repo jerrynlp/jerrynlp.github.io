@@ -91,20 +91,26 @@
 
 <p>Requirements: Git, Ruby 2.0.0 or greater</p>
 
-<blockquote><h4>Clone repo</h4>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># Clone repo</span>
+</span><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nb">cd </span>octopress
+</span><span class='line'><span class="c"># Install dependencies</span>
+</span><span class='line'><span class="nv">$ </span>gem install bundler
+</span><span class='line'><span class="nv">$ </span>rbenv rehash
+</span><span class='line'><span class="nv">$ </span>bundle install
+</span><span class='line'><span class="c"># Install the default Octopress theme</span>
+</span><span class='line'><span class="nv">$ </span>rake install
+</span></code></pre></td></tr></table></div></figure>
 
-<p>git clone git://github.com/imathis/octopress.git octopress
-cd octopress</p>
-
-<h4>Install dependencies</h4>
-
-<p>gem install bundler
-rbenv rehash
-bundle install</p>
-
-<h4>Install the default Octopress theme</h4>
-
-<p>rake install</p></blockquote>
 
 <h2>Creating Repo on Github</h2>
 
@@ -112,20 +118,29 @@ bundle install</p>
 
 <h2>Setting Up Octopress</h2>
 
-<blockquote><p>rake setup_github_pages</p></blockquote>
+<p><code>$ rake setup_github_pages</code></p>
 
 <p>Input the URL of your Github repo.</p>
 
-<blockquote><h1>Deploy your website</h1>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># Deploy your website</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span></code></pre></td></tr></table></div></figure>
 
-<p>rake generate
-rake deploy</p></blockquote>
 
 <p>After this step, you will have your website code in &ldquo;_deploy&rdquo;.</p>
 
-<blockquote><p>git add .
-git commit -m &lsquo;your message&rsquo;
-git push origin source</p></blockquote>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git add .
+</span><span class='line'><span class="nv">$ </span>git commit -m <span class="s1">&#39;your message&#39;</span>
+</span><span class='line'><span class="nv">$ </span>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>After this step, you will have your website source code which is used to generate your wbesite code in the branch of &ldquo;source&rdquo;.</p>
 
@@ -133,10 +148,16 @@ git push origin source</p></blockquote>
 
 <p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">3rd Party Octopress Themes</a> is providing many Octopress Themes with some different characteristics.</p>
 
-<blockquote><p>cd octopress
-git submodule add GIT_URL .themes/THEME_NAME
-rake install[&lsquo;THEME_NAME&rsquo;]
-rake generate</p></blockquote>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress
+</span><span class='line'><span class="nv">$ </span>git submodule add GIT_URL .themes/THEME_NAME
+</span><span class='line'><span class="nv">$ </span>rake install<span class="o">[</span><span class="s1">&#39;THEME_NAME&#39;</span><span class="o">]</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Remember to &ldquo;push&rdquo; your source code to branch of source after installing a new theme.</p>
 
@@ -159,10 +180,16 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
 
 <p>This is because some files in your local folder of &ldquo;<em>deploy&rdquo; is newer than the online version. You can easily </em>pull_ the online version to replace your local version if you are sure about there are nothing new locally.</p>
 
-<blockquote><p>cd octopress/_deploy
-git pull origin master
-cd ..
-rake deploy</p></blockquote>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress/_deploy
+</span><span class='line'><span class="nv">$ </span>git pull origin master
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd</span> ..
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h2>Reference</h2>
 
