@@ -4,7 +4,7 @@
   <title><![CDATA[NLPShare]]></title>
   <link href="http://jerrynlp.github.io/atom.xml" rel="self"/>
   <link href="http://jerrynlp.github.io/"/>
-  <updated>2017-02-21T11:57:51-05:00</updated>
+  <updated>2017-02-21T16:02:47-05:00</updated>
   <id>http://jerrynlp.github.io/</id>
   <author>
     <name><![CDATA[Weiwei Zhang]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[COMP767 Planning With Options]]></title>
+    <link href="http://jerrynlp.github.io/blog/2017/02/21/comp767-planning-with-options/"/>
+    <updated>2017-02-21T12:10:18-05:00</updated>
+    <id>http://jerrynlp.github.io/blog/2017/02/21/comp767-planning-with-options</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Using Octopress and GitHub to Build Your Blog]]></title>
