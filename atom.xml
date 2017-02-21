@@ -4,7 +4,7 @@
   <title><![CDATA[NLPShare]]></title>
   <link href="http://jerrynlp.github.io/atom.xml" rel="self"/>
   <link href="http://jerrynlp.github.io/"/>
-  <updated>2017-02-21T11:55:49-05:00</updated>
+  <updated>2017-02-21T11:57:51-05:00</updated>
   <id>http://jerrynlp.github.io/</id>
   <author>
     <name><![CDATA[Weiwei Zhang]]></name>
@@ -109,7 +109,7 @@
 <li>the Required Ruby version
 On the office site of Octopress, they are suggesting 1.9.3 or greater versions. This is not correct, and when you are installing your Octopress you will receive an error telling you to install Ruby 2.0.0 or greater.</li>
 <li>Meet problem from Git when &ldquo;rake deploy&rdquo;
-Here is the message from Git,</li>
+Here is the error message from Git,</li>
 </ul>
 
 
@@ -119,12 +119,12 @@ Here is the message from Git,</li>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>&gt; ! <span class="o">[</span>rejected<span class="o">]</span>        master -&gt; master <span class="o">(</span>non-fast-forward<span class="o">)</span>
-</span><span class='line'>&gt; error: failed to push some refs to <span class="s1">&#39;***************************************&#39;</span>
-</span><span class='line'>&gt; hint: Updates were rejected because the tip of your current branch is behind
-</span><span class='line'>&gt; hint: its remote counterpart. Merge the remote changes <span class="o">(</span>e.g. <span class="s1">&#39;git pull&#39;</span><span class="o">)</span>
-</span><span class='line'>&gt; hint: before pushing again.
-</span><span class='line'>&gt; hint: See the <span class="s1">&#39;Note about fast-forwards&#39;</span> in <span class="s1">&#39;git push --help&#39;</span> <span class="k">for</span> details.
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>! <span class="o">[</span>rejected<span class="o">]</span>        master -&gt; master <span class="o">(</span>non-fast-forward<span class="o">)</span>
+</span><span class='line'>error: failed to push some refs to <span class="s1">&#39;***************************************&#39;</span>
+</span><span class='line'>hint: Updates were rejected because the tip of your current branch is behind
+</span><span class='line'>hint: its remote counterpart. Merge the remote changes <span class="o">(</span>e.g. <span class="s1">&#39;git pull&#39;</span><span class="o">)</span>
+</span><span class='line'>hint: before pushing again.
+</span><span class='line'>hint: See the <span class="s1">&#39;Note about fast-forwards&#39;</span> in <span class="s1">&#39;git push --help&#39;</span> <span class="k">for</span> details.
 </span></code></pre></td></tr></table></div></figure>
 
 
