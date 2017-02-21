@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress, | NLPShare]]></title>
   <link href="http://jerrynlp.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://jerrynlp.github.io/"/>
-  <updated>2017-02-20T22:19:35-05:00</updated>
+  <updated>2017-02-21T11:39:11-05:00</updated>
   <id>http://jerrynlp.github.io/</id>
   <author>
     <name><![CDATA[Weiwei Zhang]]></name>
@@ -28,22 +28,24 @@
 
 <p>System enviroment: Ubuntu 16.04</p>
 
-<p>Requirements: Git, Ruby 2.0.0 or greater</p>
+<p>Requirements: Git, Ruby 2.0.0 or greater
+```sh</p>
 
-<blockquote><h4>Clone repo</h4>
+<h1>Clone repo</h1>
 
-<p>git clone git://github.com/imathis/octopress.git octopress
+<p>$ git clone git://github.com/imathis/octopress.git octopress
 cd octopress</p>
 
-<h4>Install dependencies</h4>
+<h1>Install dependencies</h1>
 
-<p>gem install bundler
-rbenv rehash
-bundle install</p>
+<p>$ gem install bundler
+$ rbenv rehash
+$ bundle install</p>
 
-<h4>Install the default Octopress theme</h4>
+<h1>Install the default Octopress theme</h1>
 
-<p>rake install</p></blockquote>
+<p>$ rake install
+```</p>
 
 <h2>Creating Repo on Github</h2>
 
@@ -51,33 +53,34 @@ bundle install</p>
 
 <h2>Setting Up Octopress</h2>
 
-<blockquote><p>rake setup_github_pages</p></blockquote>
+<p><code>$ rake setup_github_pages</code></p>
 
-<p>Input the URL of your Github repo.</p>
+<p>Input the URL of your Github repo.
+```sh</p>
 
-<blockquote><h1>Deploy your website</h1>
+<h1>Deploy your website</h1>
 
-<p>rake generate
-rake deploy</p></blockquote>
-
-<p>After this step, you will have your website code in &ldquo;_deploy&rdquo;.</p>
-
-<blockquote><p>git add .
-git commit -m &lsquo;your message&rsquo;
-git push origin source</p></blockquote>
-
-<p>After this step, you will have your website source code which is used to generate your wbesite code in the branch of &ldquo;source&rdquo;.</p>
+<p>$ rake generate
+$ rake deploy
+<code>
+After this step, you will have your website code in "_deploy".
+</code>sh
+$ git add .
+$ git commit -m &lsquo;your message&rsquo;
+$ git push origin source
+```
+After this step, you will have your website source code which is used to generate your wbesite code in the branch of &ldquo;source&rdquo;.</p>
 
 <h2>Installing a new theme</h2>
 
-<p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">3rd Party Octopress Themes</a> is providing many Octopress Themes with some different characteristics.</p>
-
-<blockquote><p>cd octopress
-git submodule add GIT_URL .themes/THEME_NAME
-rake install[&lsquo;THEME_NAME&rsquo;]
-rake generate</p></blockquote>
-
-<p>Remember to &ldquo;push&rdquo; your source code to branch of source after installing a new theme.</p>
+<p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">3rd Party Octopress Themes</a> is providing many Octopress Themes with some different characteristics.
+<code>sh
+$ cd octopress
+$ git submodule add GIT_URL .themes/THEME_NAME
+$ rake install['THEME_NAME']
+$ rake generate
+</code>
+Remember to &ldquo;push&rdquo; your source code to branch of source after installing a new theme.</p>
 
 <h2>Question &amp; Answer</h2>
 
@@ -96,12 +99,13 @@ hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;h
 </ul>
 
 
-<p>This is because some files in your local folder of &ldquo;<em>deploy&rdquo; is newer than the online version. You can easily </em>pull_ the online version to replace your local version if you are sure about there are nothing new locally.</p>
-
-<blockquote><p>cd octopress/_deploy
-git pull origin master
-cd ..
-rake deploy</p></blockquote>
+<p>This is because some files in your local folder of &ldquo;<em>deploy&rdquo; is newer than the online version. You can easily </em>pull_ the online version to replace your local version if you are sure about there are nothing new locally.
+<code>sh
+$ cd octopress/_deploy
+$ git pull origin master
+$ cd ..
+$ rake deploy
+</code></p>
 
 <h2>Reference</h2>
 
